@@ -143,7 +143,7 @@ Exemplos:
 
 --- 
 
-## 🧊 Estratégia de Armazenamento HOT / WARM / ICE
+## 🧊 Estratégia de Armazenamento &#8288;H&#8288;O&#8288;T&#8288; / &#8288;W&#8288;A&#8288;R&#8288;M&#8288; / &#8288;I&#8288;C&#8288;E&#8288;
 
 A arquitetura ShipLink adota uma abordagem moderna e escalável para gestão de dados, inspirada em grandes players globais:
 
