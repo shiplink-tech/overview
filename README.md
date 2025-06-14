@@ -134,7 +134,7 @@ Exemplos:
 
   * ERP
   * WMS
-  * Marketplace B2B
+  * M&#8288;a&#8288;r&#8288;k&#8288;e&#8288;t&#8288;p&#8288;l&#8288;a&#8288;c&#8288;e B2B
   * RH, Fiscal, Pagamentos, Saúde, Robótica, IA...
 * Produtos serão lançados sob domínios próprios (`airlogexpress.com.br`, etc), mantendo a arquitetura e APIs intactas
 * Escalabilidade horizontal com balanceamento por DNS reverso e segmentação por microserviço
