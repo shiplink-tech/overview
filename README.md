@@ -53,17 +53,20 @@ Exemplos:
 ## 🧠 Princípios Arquiteturais
 
 1. **100% HTTP (REST)**
+
    Toda comunicação entre microserviços ocorre via **API externa HTTP**, inclusive durante o desenvolvimento. Nada é acoplado localmente.
 
 2. **Banco por microserviço**
+
    Cada serviço possui seu **banco de dados exclusivo**, com tabelas específicas. Isolamento total por responsabilidade.
 
 3. **Banco de dados agnóstico (multi-driver)**
    Cada microserviço pode operar com o banco de dados mais apropriado para seu contexto:
    * MySQL (CRUDs e aplicações transacionais)
    * PostgreSQL (consultas analíticas e geográficas)
-   * MongoDB (documentos dinâmicos ou não relacionais)
+   * MongoDB (documentos d&#8288;i&#8288;n&#8288;â&#8288;m&#8288;i&#8288;c&#8288;o&#8288;s ou não relacionais)
    * Oracle, SQL Server (sistemas legados ou clientes específicos)
+
    Os drivers de conexão ficam desacoplados dentro de /drivers, e a Engine.php é responsável por rotear dinamicamente conforme o ambiente e o projeto.
 
 4. **Padrão único de resposta JSON**
