@@ -58,7 +58,15 @@ Exemplos:
 2. **Banco por microserviço**
    Cada serviço possui seu **banco de dados exclusivo**, com tabelas específicas. Isolamento total por responsabilidade.
 
-3. **Padrão único de resposta JSON**
+3. **Banco de dados agnóstico (multi-driver)**
+   Cada microserviço pode operar com o banco de dados mais apropriado para seu contexto:
+   * MySQL (CRUDs e aplicações transacionais)
+   * PostgreSQL (consultas analíticas e geográficas)
+   * MongoDB (documentos dinâmicos ou não relacionais)
+   * Oracle, SQL Server (sistemas legados ou clientes específicos)
+   Os drivers de conexão ficam desacoplados dentro de /drivers, e a Engine.php é responsável por rotear dinamicamente conforme o ambiente e o projeto.
+
+4. **Padrão único de resposta JSON**
    Todos os endpoints seguem o modelo:
 
    ```json
@@ -69,20 +77,20 @@ Exemplos:
    }
    ```
 
-4. **Versionamento por path (v1, v2...)**
+5. **Versionamento por path (v1, v2...)**
    URLs versionadas, permitindo múltiplas versões simultâneas:
 
    ```
    https://api.shiplink.com.br/v1/tms-ticket/...
    ```
 
-5. **Autenticação obrigatória**
+6. **Autenticação obrigatória**
    Toda API exige **token JWT ou Bearer**. Mesmo ambientes sandbox requerem autenticação.
 
-6. **Separação entre produtos**
+7. **Separação entre produtos**
    Cada linha de produto (TMS, CRM, WMS, CTE, etc.) é **isolada em microserviços independentes**.
 
-7. **Subdomínios por produto**
+8. **Subdomínios por produto**
    Padrão DNS separado por produto e função:
 
    * `api.tms.com.br`
@@ -91,10 +99,10 @@ Exemplos:
 
    E o mesmo para `crm`, `cte`, etc. Permitindo escalabilidade, cache e balanceamento separados.
 
-8. **Repositórios separados (no monorepo!)**
+9. **Repositórios separados (no monorepo!)**
    Cada microserviço tem **repositório próprio**, com CI/CD, documentação, controle de acesso e versionamento independentes.
 
-9. **Padrões técnicos consolidados**
+10. **Padrões técnicos consolidados**
 
    * PSR-4 obrigatório
    * `src/` como base dos códigos
@@ -102,7 +110,7 @@ Exemplos:
    * Pastas `drivers/`, `Engine.php`, `Router.php` ou equivalentes
    * Contratos de comunicação unificados
 
-10. **Documentação viva e distribuída**
+11. **Documentação viva e distribuída**
 
     * Cada microserviço possui seu `README.md` técnico interno
     * Um **portal central de documentação** será construído com Swagger ou Redoc
@@ -121,6 +129,21 @@ Exemplos:
   * RH, Fiscal, Pagamentos, Saúde, Robótica, IA...
 * Produtos serão lançados sob domínios próprios (`airlogexpress.com.br`, etc), mantendo a arquitetura e APIs intactas
 * Escalabilidade horizontal com balanceamento por DNS reverso e segmentação por microserviço
+
+---
+
+--- 
+
+## 🧊 Estratégia de Armazenamento HOT / WARM / ICE
+A arquitetura ShipLink adota uma abordagem moderna e escalável para gestão de dados, inspirada em grandes players globais:
+
+|   Camada  |   Objetivo    |   Frequência de uso   |   Infraestrutura recomendada  |
+| --------------------------------------------------------------------------------- |
+|   HOT |   Dados recentes e críticos	|    Muito alta (tempo real)    |   Instância dedicada (banco primário) |
+|   WARM    |	Dados intermediários (+30 dias) |   Média   |   Instância otimizada (menos recursos)    |
+|   ICE |   Históricos e auditorias (+90 dias)  |   Baixa   |   Storage barato e alta retenção (ex: Azure Blob, S3) |
+
+Cada camada pode residir em bancos diferentes, com integração via API e controle transparente.
 
 ---
 
