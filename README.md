@@ -147,6 +147,8 @@ Exemplos:
 
 A arquitetura ShipLink adota uma abordagem moderna e escalável para gestão de dados, inspirada em grandes players globais:
 
+
+```bash
 |Camada |Objetivo                           |Frequência de uso          |Infraestrutura recomendada                             |
 |-------|-----------------------------------|---------------------------|-------------------------------------------------------|
 |HOT    |Dados recentes e críticos	        |Muito alta (tempo real)    |Instância dedicada (banco primário)                    |
@@ -154,7 +156,7 @@ A arquitetura ShipLink adota uma abordagem moderna e escalável para gestão de 
 |ICE    |Históricos e auditorias (+90 dias) |Baixa                      |Storage barato e alta retenção (ex: Azure Blob, S3)    |
 
 Cada camada pode residir em bancos diferentes, com integração via API e controle transparente.
-
+```
 ---
 
 ## 💡 Visão
