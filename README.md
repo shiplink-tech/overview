@@ -61,6 +61,7 @@ Exemplos:
    Cada serviço possui seu **banco de dados exclusivo**, com tabelas específicas. Isolamento total por responsabilidade.
 
 3. **Banco de dados agnóstico (multi-driver)**
+
    Cada microserviço pode operar com o banco de dados mais apropriado para seu contexto:
    * MySQL (CRUDs e aplicações transacionais)
    * PostgreSQL (consultas analíticas e geográficas)
@@ -70,6 +71,7 @@ Exemplos:
    Os drivers de conexão ficam desacoplados dentro de /drivers, e a Engine.php é responsável por rotear dinamicamente conforme o ambiente e o projeto.
 
 4. **Padrão único de resposta JSON**
+
    Todos os endpoints seguem o modelo:
 
    ```json
@@ -81,6 +83,7 @@ Exemplos:
    ```
 
 5. **Versionamento por path (v1, v2...)**
+
    URLs versionadas, permitindo múltiplas versões simultâneas:
 
    ```
@@ -88,12 +91,15 @@ Exemplos:
    ```
 
 6. **Autenticação obrigatória**
+
    Toda API exige **token JWT ou Bearer**. Mesmo ambientes sandbox requerem autenticação.
 
 7. **Separação entre produtos**
+
    Cada linha de produto (TMS, CRM, WMS, CTE, etc.) é **isolada em microserviços independentes**.
 
 8. **Subdomínios por produto**
+
    Padrão DNS separado por produto e função:
 
    * `api.tms.com.br`
@@ -103,6 +109,7 @@ Exemplos:
    E o mesmo para `crm`, `cte`, etc. Permitindo escalabilidade, cache e balanceamento separados.
 
 9. **Repositórios separados (no monorepo!)**
+
    Cada microserviço tem **repositório próprio**, com CI/CD, documentação, controle de acesso e versionamento independentes.
 
 10. **Padrões técnicos consolidados**
@@ -138,6 +145,7 @@ Exemplos:
 --- 
 
 ## 🧊 Estratégia de Armazenamento HOT / WARM / ICE
+
 A arquitetura ShipLink adota uma abordagem moderna e escalável para gestão de dados, inspirada em grandes players globais:
 
 |   Camada  |   Objetivo    |   Frequência de uso   |   Infraestrutura recomendada  |
