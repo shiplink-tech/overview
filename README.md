@@ -151,9 +151,9 @@ A arquitetura ShipLink adota uma abordagem moderna e escalável para gestão de 
 
 |Camada |Objetivo                           |Frequência de uso          |Infraestrutura recomendada                             |
 |-------|-----------------------------------|---------------------------|-------------------------------------------------------|
-|H&#8288;O&#8288;T    |Dados recentes e críticos	        |Muito alta (tempo real)    |Instância dedicada (banco primário)                    |
-|W&#8288;A&#8288;R&#8288;M   |Dados intermediários (+30 dias)    |M&#8288;é&#8288;d&#8288;i&#8288;a                      |Instância otimizada (menos recursos)                   |
-|I&#8288;C&#8288;E    |Históricos e a&#8288;u&#8288;ditorias (+90 dias) |Baixa                      |S&#8288;t&#8288;o&#8288;r&#8288;a&#8288;g&#8288;e barato e alta retenção (ex: Azure Blob, S3)    |
+|H&#8288;OT    |Dados recentes e críticos	        |Muito alta (tempo real)    |Instância dedicada (banco primário)                    |
+|W&#8288;ARM   |Dados intermediários (+30 dias)    |M&#8288;édia                      |Instância otimizada (menos recursos)                   |
+|I&#8288;CE    |Históricos e a&#8288;uditorias (+90 dias) |Baixa                      |S&#8288;torage barato e alta retenção (ex: Azure Blob, S3)    |
 
 Cada camada pode residir em bancos diferentes, com integração via API e controle transparente.
 
