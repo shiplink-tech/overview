@@ -1,4 +1,4 @@
-# S&#8288;h&#8288;i&#8288;p&#8288;L&#8288;i&#8288;n&#8288;k – Arquitetura Global de Microserviços
+# ShipLink – Arquitetura Global de Microserviços
 
 A **ShipLink** é a empresa de tecnologia responsável pela criação e manutenção de uma arquitetura de microserviços **escalável, modular e desacoplada**, voltada ao desenvolvimento de soluções SaaS para **negócios de qualquer natureza** — desde logística e gestão empresarial até setores como saúde, RH, e-commerce, marketplace, pagamentos e muito mais.
 
@@ -44,9 +44,9 @@ wms-*
 
 Exemplos:
 
-* [c&#8288;o&#8288;r&#8288;e-c&#8288;r&#8288;u&#8288;d] (https://github.com/shiplink-tech/core-crud)
-* [t&#8288;m&#8288;s-t&#8288;i&#8288;c&#8288;k&#8288;e&#8288;t] (https://github.com/shiplink-tech/tms-ticket)
-* [c&#8288;r&#8288;m-l&#8288;e&#8288;a&#8288;d] (https://github.com/shiplink-tech/crm-lead)
+* [core-crud](https://github.com/shiplink-tech/core-crud)
+* [tms-ticket](https://github.com/shiplink-tech/tms-ticket)
+* [crm-lead](https://github.com/shiplink-tech/crm-lead)
 
 ---
 
