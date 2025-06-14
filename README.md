@@ -44,7 +44,7 @@ wms-*
 
 Exemplos:
 
-* [core-crud](https://github.com/shiplink-tech/core-crud)
+* [cU+2060oU+2060rU+2060e-crud](https://github.com/shiplink-tech/core-crud)
 * [tms-ticket](https://github.com/shiplink-tech/tms-ticket)
 * [crm-lead](https://github.com/shiplink-tech/crm-lead)
 
