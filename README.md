@@ -144,7 +144,7 @@ Exemplos:
 
 ---
 
-## 🧱 Expansion Strategy (Fundamentos de Expansão)
+## 🧱 Expansion Fundamentals (Fundamentos de Expansão)
 
 * Estrutura preparada para produtos futuros:
 
@@ -182,3 +182,13 @@ Cada camada pode residir em bancos diferentes, com integração via API e contro
 ---
 
 Este documento é a **base oficial da arquitetura da ShipLink**. Toda nova decisão técnica deverá seguir este padrão ou ter justificativa clara e documentada como exceção.
+
+---
+
+👨‍💼 Fundador
+
+A arquitetura da ShipLink foi idealizada por [Wellington Duarte](https://www.linkedin.com/in/wellington-duarte-dev), profissional com mais de 20 anos de experiência em logística, a mais de 10anos em tecnologia e gestão empresarial.
+
+Saiba mais em seu [portfólio pessoal](https://github.com/wellington-duarte-dev/portfolio), incluindo projetos como:
+
+- [DLog Overview](https://github.com/dlog-tech/overview) *(em breve)* – legado de 10 anos em transporte logístico
