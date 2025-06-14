@@ -6,7 +6,7 @@ Nosso objetivo é consolidar a ShipLink como uma **empresa referência em tecnol
 
 ---
 
-## 📁 Estrutura de Diretórios (máquina local)
+## 📁 Directory Structure (Estrutura de Diretórios - Local)
 
 ```bash
 C:\Projetos\
@@ -30,7 +30,7 @@ C:\Projetos\
 
 ---
 
-## 🌐 Organização de Repositórios (GitHub)
+## 🌐 Repository Organization (Organização de Repositórios - GitHub) 
 
 Cada microserviço é versionado **em um repositório separado**, com nomes padronizados:
 
@@ -50,7 +50,7 @@ Exemplos:
 
 ---
 
-## 🧠 Princípios Arquiteturais
+## 🧠 Architecture Principles (Princípios de Arquitetura)
 
 1. **100% HTTP (REST)**
 
@@ -144,7 +144,7 @@ Exemplos:
 
 ---
 
-## 🧱 Fundamentos de Expansão
+## 🧱 Expansion Strategy (Fundamentos de Expansão)
 
 * Estrutura preparada para produtos futuros:
 
@@ -175,7 +175,7 @@ Cada camada pode residir em bancos diferentes, com integração via API e contro
 
 ---
 
-## 💡 Visão
+## 💡 Vision (Visão)
 
 > Criar a maior e mais confiável plataforma SaaS de gestão e automação de negócios do Brasil — e futuramente do mundo — com base em **microserviços inteligentes, APIs bem definidas, independência total de sistemas e uma arquitetura de referência global**.
 
