@@ -68,7 +68,7 @@ Exemplos:
    * MongoDB (documentos d&#8288;i&#8288;n&#8288;â&#8288;m&#8288;i&#8288;c&#8288;o&#8288;s ou não relacionais)
    * Oracle, SQL Server (sistemas legados ou clientes específicos)
 
-   Os drivers de conexão ficam desacoplados dentro de /drivers, e a Engine.php é responsável por rotear dinamicamente conforme o ambiente e o projeto.
+   Os drivers de conexão ficam desacoplados dentro de /drivers, e a Engine.php é responsável por r&#8288;o&#8288;t&#8288;e&#8288;ar dinamicamente conforme o ambiente e o projeto.
 
 4. **Padrão único de resposta JSON**
 
