@@ -134,7 +134,6 @@ Exemplos:
 
   * ERP
   * WMS
-  * App Mobile
   * Marketplace B2B
   * RH, Fiscal, Pagamentos, Saúde, Robótica, IA...
 * Produtos serão lançados sob domínios próprios (`airlogexpress.com.br`, etc), mantendo a arquitetura e APIs intactas
