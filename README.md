@@ -18,7 +18,7 @@ C:\Projetos\
     │   ├── tms-dashboard
     │   ├── tms-ticket
     │   └── ...
-    ├── CRM\                ← Gestão de Relacionamento com Clientes e Vendas
+    ├── CRM\                ← Gestão de Relacionamento e Funil de Vendas (Pipeline Kanban)
     │   ├── crm-lead
     │   └── ...
     ├── CTE\                ← Serviços fiscais de emissão de CTe
@@ -120,7 +120,23 @@ Exemplos:
    * Pastas `drivers/`, `Engine.php`, `Router.php` ou equivalentes
    * Contratos de comunicação unificados
 
-11. **Documentação viva e distribuída**
+11. **Acesso segmentado por equipe**
+
+    A arquitetura foi desenhada para **permitir que grandes times trabalhem de forma independente**, cada um atuando exclusivamente sobre seu microserviço. Isso garante:
+
+    - **Segurança organizacional**: um time não precisa conhecer nem acessar os códigos ou dados de outros domínios.
+    - **Escalabilidade real de equipes**: mais desenvolvedores podem ser incluídos sem sobrecarga cognitiva.
+    - **Autonomia por produto**: permite terceirizar, escalar ou modularizar produtos (como TMS, CRM, etc) com total liberdade.
+
+12. **Independência de linguagem e tecnologia**
+
+    Cada microserviço pode ser desenvolvido com a linguagem ou framework mais adequado ao seu objetivo — como PHP, Java, C#, Node.js, Python, entre outros. O mesmo vale para o frontend (React, Vue, etc).
+
+    - **Flexibilidade tecnológica**: cada serviço pode evoluir com autonomia e tecnologias específicas.
+    - **Integração com times diversos**: permite colaboração com desenvolvedores de diferentes stacks.
+    - **Adoção de soluções modernas**: sem necessidade de reescrever a base para incorporar novas tendências.
+
+13. **Documentação viva e distribuída**
 
     * Cada microserviço possui seu `README.md` técnico interno
     * Um **portal central de documentação** será construído com Swagger ou Redoc
