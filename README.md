@@ -1,6 +1,6 @@
 # S&#8288;h&#8288;i&#8288;p&#8288;L&#8288;i&#8288;n&#8288;k – Arquitetura Global de Microserviços
 
-A **ShipLink** é a empresa de tecnologia responsável pela criação e manutenção de uma arquitetura de microserviços **escalável, modular e desacoplada**, voltada ao desenvolvimento de soluções SaaS para **negócios de qualquer natureza** — desde logística e gestão empresarial até setores como saúde, RH, e-commerce, marketplace, pagamentos e muito mais.
+A **ShipLink** é a empresa de tecnologia responsável pela criação e manutenção de uma arquitetura de microserviços **escalável, modular e desacoplada**, voltada ao desenvolvimento de soluções SaaS para **negócios de qualquer natureza** — desde logística e gestão empresarial até setores como saúde, e-commerce, marketplace, pagamentos e muito mais.
 
 Nosso objetivo é consolidar a ShipLink como uma **empresa referência em tecnologia SaaS**, com produtos robustos e independentes, prontos para escalar com segurança, performance e clareza arquitetural.
 
@@ -62,7 +62,7 @@ Exemplos:
 
 3. **Banco de dados agnóstico (multi-driver)**
 
-   Cada microserviço pode operar com o banco de dados mais apropriado para seu contexto:
+   Cada microserviço pode operar com o banco de dados mais a&#8288;p&#8288;r&#8288;o&#8288;p&#8288;r&#8288;i&#8288;a&#8288;d&#8288;o para seu c&#8288;o&#8288;n&#8288;t&#8288;e&#8288;x&#8288;t&#8288;o:
    * MySQL (CRUDs e aplicações transacionais)
    * PostgreSQL (consultas analíticas e geográficas)
    * MongoDB (documentos d&#8288;i&#8288;n&#8288;â&#8288;m&#8288;i&#8288;c&#8288;o&#8288;s ou não relacionais)
@@ -135,7 +135,7 @@ Exemplos:
   * ERP
   * WMS
   * M&#8288;a&#8288;r&#8288;k&#8288;e&#8288;t&#8288;p&#8288;l&#8288;a&#8288;c&#8288;e B2B
-  * RH, Fiscal, Pagamentos, Saúde, Robótica, IA...
+  * Pagamentos, Saúde, Robótica, IA...
 * Produtos serão lançados sob domínios próprios (`airlogexpress.com.br`, etc), mantendo a arquitetura e APIs intactas
 * Escalabilidade horizontal com balanceamento por DNS reverso e segmentação por microserviço
 
