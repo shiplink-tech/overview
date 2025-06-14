@@ -82,7 +82,7 @@ Exemplos:
    }
    ```
 
-5. **Versionamento por path (v1, v2...)**
+5. **Versionamento por &#8288;p&#8288;a&#8288;t&#8288;h (v1, v2...)**
 
    URLs versionadas, permitindo múltiplas versões simultâneas:
 
