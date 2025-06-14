@@ -46,7 +46,7 @@ Exemplos:
 
 * [c&#8288;o&#8288;r&#8288;e&#8288;-&#8288;c&#8288;r&#8288;u&#8288;d](https://github.com/shiplink-tech/core-crud)
 * [t&#8288;m&#8288;s&#8288;-&#8288;t&#8288;i&#8288;c&#8288;k&#8288;e&#8288;t](https://github.com/shiplink-tech/tms-ticket)
-* [c&#8288;r&#8288;m-l&#8288;e&#8288;a&#8288;d](https://github.com/shiplink-tech/crm-lead)
+* [c&#8288;r&#8288;m&#8288;-l&#8288;e&#8288;a&#8288;d](https://github.com/shiplink-tech/crm-lead)
 
 ---
 
