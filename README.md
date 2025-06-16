@@ -185,10 +185,16 @@ Este documento é a **base oficial da arquitetura da ShipLink**. Toda nova decis
 
 ---
 
-👨‍💼 Fundador
+## 👨‍💼 Fundador
 
 A arquitetura da ShipLink foi idealizada por [Wellington Duarte](https://www.linkedin.com/in/wellington-duarte-dev), profissional com mais de 20 anos de experiência em logística para e-commerce e mais de 10 anos em tecnologia e gestão empresarial.
 
-Saiba mais em seu [portfólio pessoal](https://github.com/wellington-duarte-dev/portfolio), incluindo projetos como:
+Saiba mais em:  
 
-- [DLog Overview](https://github.com/dlog-tech/overview) *(em breve)* – legado de 10 anos em transporte logístico
+- [DLog](https://github.com/dlog-servicos-logisticos/overview) – legado de 10 anos em transporte para e-commerce  
+- [Wellington - Portfólio](https://github.com/wellington-duarte-dev/portfolio)
+
+## 🤝 Contato
+
+**Wellington Duarte**  
+wellington@shiplink.com.br | welduarte@icloud.com
