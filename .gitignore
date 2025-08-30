@@ -1,0 +1,46 @@
+# Node.js / NPM (se for Node)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (se for Python)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+*.egg-info/
+
+# Docker
+docker-compose.override.yml
+*.log
+
+# Arquivos sensíveis
+.env
+.env.local
+.env.*.local
+
+# Sistemas Operacionais
+.DS_Store
+Thumbs.db
+
+# IDEs / Editores
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+
+
+# Logs e cache
+logs/
+*.log
+.cache/
+tmp/
+
+# Aruivos de desenvolvimento, testes, modelos e backups.
+tDev*
+"bkp"
+*teste*
+*modelo*
